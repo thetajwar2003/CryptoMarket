@@ -12,6 +12,7 @@
 		681BC9182672FDA4000FB190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681BC9172672FDA4000FB190 /* Assets.xcassets */; };
 		681BC91B2672FDA4000FB190 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 681BC91A2672FDA4000FB190 /* Preview Assets.xcassets */; };
 		681BC9232672FE9A000FB190 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681BC9222672FE9A000FB190 /* Constants.swift */; };
+		68BD10242673C2F800EF3F84 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD10232673C2F800EF3F84 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		681BC91A2672FDA4000FB190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		681BC91C2672FDA4000FB190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		681BC9222672FE9A000FB190 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		68BD10232673C2F800EF3F84 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				681BC9132672FDA3000FB190 /* CryptoMarketApp.swift */,
 				681BC9152672FDA3000FB190 /* ContentView.swift */,
+				68BD10232673C2F800EF3F84 /* Data.swift */,
 				681BC9222672FE9A000FB190 /* Constants.swift */,
 				681BC9172672FDA4000FB190 /* Assets.xcassets */,
 				681BC91C2672FDA4000FB190 /* Info.plist */,
@@ -144,6 +147,7 @@
 				681BC9162672FDA3000FB190 /* ContentView.swift in Sources */,
 				681BC9142672FDA3000FB190 /* CryptoMarketApp.swift in Sources */,
 				681BC9232672FE9A000FB190 /* Constants.swift in Sources */,
+				68BD10242673C2F800EF3F84 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
