@@ -8,9 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isActive:Bool = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            if self.isActive{
+                Text("Hello, world!")
+                    .padding()
+            } else {
+                ZStack{
+                    Color(UIColor(red: 0/255, green: 72/255, blue: 203/255, alpha: 1)).edgesIgnoringSafeArea(.all)
+                    Image("CryptoMarket")
+                .resizable()
+                }
+
+            }
+        }
+        .onAppear{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                withAnimation{
+                    self.isActive = true
+                }
+            }
+        }
+        
     }
 }
 
