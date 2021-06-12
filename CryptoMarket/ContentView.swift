@@ -30,28 +30,7 @@ struct ContentView: View {
         NavigationView {
             if self.isActive{
                 List(coins) { coin in
-                    let price = String(format: "%.2f", coin.quote.USD.price)
-                    let positive = coin.quote.USD.percent_change_1h > 0
-                    HStack {
-                        URLImage(url: "https://s2.coinmarketcap.com/static/img/coins/64x64/\(coin.id).png").frame(width: 24, height: 24, alignment: .leading)
-                        VStack(alignment: .leading) {
-                            Text(coin.name)
-                                .fontWeight(.bold)
-//                                    .padding(EdgeInsets(top: 13, leading: 0, bottom: 0, trailing: 0))
-                            Text(coin.symbol)
-                                .foregroundColor(.secondary)
-                                .font(.caption)
-                        }
-                    
-                    }
-                    Spacer()
-                    Triangle()
-                        .fill(positive ? Color.green : Color.red)
-                        .frame(width: 10, height: 10)
-                        .rotationEffect(positive ? .degrees(0) : .degrees(180))
-                    Text("$\(price)")
-                        .frame(height: 3, alignment: .trailing)
-                        .foregroundColor(positive ? Color.green : Color.red)
+                    ItemRow(coin: coin)
                 }
                 .navigationBarTitle(Text("Crypto Market"))
 //                .onAppear{
