@@ -48,6 +48,7 @@ class API {
             let listings = try! JSONDecoder().decode(LatestListing.self, from: data)
             
             DispatchQueue.main.async {
+//                let quote: Any = data?.quote?.USD
                 completion(listings)
             }
         }.resume()
