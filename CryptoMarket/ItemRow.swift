@@ -17,7 +17,7 @@ struct ItemRow: View {
                 .fill(Color.white)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .shadow(color: Color.gray, radius: 3, x: 3, y: 3)
-            NavigationLink(destination: Text(coin.name)) {
+            NavigationLink(destination: CoinDetail(coin: coin)) {
                 HStack{
                     HStack {
                         URLImage(url: "https://s2.coinmarketcap.com/static/img/coins/64x64/\(coin.id).png").frame(width: 24, height: 24, alignment: .leading)
