@@ -18,6 +18,9 @@ struct SingleCoinList: Codable, Identifiable {
     var slug: String
     var cmc_rank: Int
     var last_updated: String
+    var circulating_supply: Double
+    var total_supply: Double
+//    var max_supply: Double
     var quote: Quote
 }
 
@@ -31,6 +34,7 @@ struct USD: Codable {
     var percent_change_24h: Double
     var percent_change_7d: Double
     var market_cap: Double
+    var volume_24h: Double
 }
 
 class API {
@@ -48,9 +52,27 @@ class API {
             let listings = try! JSONDecoder().decode(LatestListing.self, from: data)
             
             DispatchQueue.main.async {
-//                let quote: Any = data?.quote?.USD
                 completion(listings)
             }
         }.resume()
     }
+//    func getMetaData (id: Int) {
+//        let url = URL(string: "https://pro-api.coinmarketcap.com/v1/cryptocurrency/info?id=\(id)")!
+//        var req = URLRequest(url: url)
+//        req.addValue(APIKEY, forHTTPHeaderField: "X-CMC_PRO_API_KEY")
+//        req.addValue("application/json", forHTTPHeaderField: "Content-Type")
+//
+//        URLSession.shared.dataTask(with: req){data, response, error in
+//            guard let data = data else {
+//                print("\(error?.localizedDescription ?? "Unknown error")")
+//                return
+//            }
+//            let meta = try! JSONDecoder().decode(LatestListing.self, from: data)
+//
+//            DispatchQueue.main.async {
+////                completion(listings)
+//                print(meta)
+//            }
+//        }.resume()
+//    }
 }

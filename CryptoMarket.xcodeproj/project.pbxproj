@@ -14,6 +14,8 @@
 		681BC9232672FE9A000FB190 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681BC9222672FE9A000FB190 /* Constants.swift */; };
 		68BD10242673C2F800EF3F84 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BD10232673C2F800EF3F84 /* Data.swift */; };
 		68D51074267425640077307B /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D51073267425640077307B /* URLImage.swift */; };
+		68D51076267527480077307B /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D51075267527480077307B /* ItemRow.swift */; };
+		68D5107826755EFE0077307B /* CoinDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D5107726755EFE0077307B /* CoinDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		681BC9222672FE9A000FB190 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		68BD10232673C2F800EF3F84 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		68D51073267425640077307B /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
+		68D51075267527480077307B /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		68D5107726755EFE0077307B /* CoinDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetail.swift; sourceTree = "<group>"; };
+		68E625F6267815990024E856 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,7 @@
 		681BC9072672FDA3000FB190 = {
 			isa = PBXGroup;
 			children = (
+				68E625F6267815990024E856 /* README.md */,
 				681BC9122672FDA3000FB190 /* CryptoMarket */,
 				681BC9112672FDA3000FB190 /* Products */,
 			);
@@ -58,7 +64,9 @@
 		681BC9122672FDA3000FB190 /* CryptoMarket */ = {
 			isa = PBXGroup;
 			children = (
+				68D5107726755EFE0077307B /* CoinDetail.swift */,
 				68D51073267425640077307B /* URLImage.swift */,
+				68D51075267527480077307B /* ItemRow.swift */,
 				681BC9132672FDA3000FB190 /* CryptoMarketApp.swift */,
 				681BC9152672FDA3000FB190 /* ContentView.swift */,
 				68BD10232673C2F800EF3F84 /* Data.swift */,
@@ -149,7 +157,9 @@
 			files = (
 				681BC9162672FDA3000FB190 /* ContentView.swift in Sources */,
 				681BC9142672FDA3000FB190 /* CryptoMarketApp.swift in Sources */,
+				68D5107826755EFE0077307B /* CoinDetail.swift in Sources */,
 				681BC9232672FE9A000FB190 /* Constants.swift in Sources */,
+				68D51076267527480077307B /* ItemRow.swift in Sources */,
 				68D51074267425640077307B /* URLImage.swift in Sources */,
 				68BD10242673C2F800EF3F84 /* Data.swift in Sources */,
 			);
